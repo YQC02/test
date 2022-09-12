@@ -1,0 +1,29 @@
+body{
+    background:url(url../images/1.jpg);
+}
+#content{
+    height:500px;
+    background:none;
+}
+#leftside{
+    width:250px;
+    float:left;
+    font-size: 10pt;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+#rightside{
+    height:500px;
+    width:500px;
+    margin-left: 220px;
+    margin-top: 10px;
+    padding:10px;
+    font-size: 10pt;
+}
+#d11,#d12,#d13,#d14,#d21,#d22,#d23,#d24{
+    display:inline;
+}
+#d11 img,#d12 img,#d13 img,#d14 img,#d21 img,#d22 img,#d23 img,#d24 img{
+    width:140px;
+    height:100px;
+}
