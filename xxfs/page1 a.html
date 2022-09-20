@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>引入</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+<style type="text/css">
+*{ margin:0; padding:0}
+body{font-family:"宋体"; color:#E6F4F4;background-image: linear-gradient(45deg, #111113, #656C68);}
+.wrap{ width:900px; margin:0 auto; }
+
+.art{ color:#E6F4F4;}
+.art p{ line-height:38px; font-size: 20px; text-align:center;font-family:"楷体";line-height:250%;}
+.tw p{line-height:px; font-size:18px; text-align:center}
+.jt{ text-align:center; padding-bottom: 0px;padding-top: -222px;}
+.jt img{ width:50px;}
+.tw{ position:relative}
+.tpa{ position:absolute; right:-320px; bottom:-10px;}
+.tpa img{ width:190px;}
+.tpd{ position:absolute; right:-170px; bottom:-10px;}
+.tpd img{ width:300px;}
+.tpb{ position:absolute; left:-500px;bottom:-240px;}
+.tpb img{ width:350px}
+.tpc{ position:absolute; left:-170px;bottom:-240px;}
+.tpc img{ width:300px}
+.zc{ width:280px; margin-top:130px; margin-bottom:200px;}
+.zc img{ width:300%; margin-top:0px;}
+.yc{ float:right; margin-right:-50px;margin-top:180px;}
+.yc p{font-size:28px!important;font-family:"宋体"; line-height:65px!important}
+.xdt{ margin-top:0px;}
+.xdt p{line-height:38px; font-size:18px;}
+.vod{  margin-top:100px;margin-bottom: 100px;}
+.vod video{ width: 330px;
+  height: 660px;
+  
+  /* 圆角矩形设置为高度的一半 */
+  border: 3px  #8bb4b4;
+  border-radius: 50px;}
+ 
+.dlbox{ padding:0px 10px;}
+
+.dlbox p{ line-height:50px; font-size:18px; text-indent:2.0em}
+
+.link{ text-align: center; font-size:24px; background:#FFF; padding:30px 0px; margin:0px 0px 0px 0px;}
+.link a{ color:#F1350E; text-decoration:none;}
+.tc{ color:#f2b07c; font-size:48px;font-family:"宋体";}
+.hh{ height:30px;}
+.qsh p{ font-size:30px!important;font-family:"宋体"; line-height:65px!important}
+.qsha p{ font-size:30px!important;font-family:"思源宋体"; line-height:65px!important}
+.lyd p{padding-top: 222px;}
+.wzz{ color:#e7f5f5; padding:10px;}
+.wzz p{ line-height:40px; font-size:16px; text-indent:2.0em}
+.juxing{margin-top:-115px;}
+
+@keyframes fade-in {
+
+0% {opacity: 0; margin-top:100px;}/*初始状态 透明度为0*/
+
+40% {opacity: 0.5;margin-top:38px;}/*过渡状态 透明度为0*/
+
+100% {opacity: 1; margin-top:0px;}/*结束状态 透明度为1*/
+
+}
+.qsh{ height:200px;overflow:hidden;padding-top: 250px;padding-bottom: 300px;}
+.qsha{ height:200px;overflow:hidden;padding-top: 500px;padding-bottom: 0px;}
+.dgxa{animation:fade-in;animation-duration: 1.5s;} 
+.lunbo{ margin:20px 10px; height:130px;}
+#tj{
+  padding-top: 20px;
+}
+.opaqued {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all .5s ease-in-out;
+  text-shadow: rgb(0 0 0 / 40%) 0 1px 1px;
+  border: none;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar {
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+header{
+  display: block;
+}
+.navbar-header h1{
+  font-size: 26px;
+  color: #449fab;
+  font-weight: 700;
+}
+.navbar-right li a{
+  font-size: 17px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+<!--元素跳动-->
+@-webkit-keyframes bounce-down {
+  25% {-webkit-transform: translateY(-10px);}
+  50%, 100% {-webkit-transform: translateY(0);}
+  75% {-webkit-transform: translateY(10px);}
+ }
+
+ @keyframes bounce-down {
+  25% {transform: translateY(-10px);}
+  50%, 100% {transform: translateY(0);}
+  75% {transform: translateY(10px);}
+ }
+
+ .animate-bounce-down{ background:#333; width: 100px; height: 100px; margin:50px auto;-webkit-animation: bounce-down 1.5s linear infinite;animation: bounce-down 1.5s linear infinite;
+ }
+
+ @-webkit-keyframes bounce-up {
+  25% {-webkit-transform: translateY(10px);}
+  50%, 100% {-webkit-transform: translateY(0);}
+  75% {-webkit-transform: translateY(-10px);}
+ }
+
+ @keyframes bounce-up {
+  25% {transform: translateY(10px);}
+  50%, 100% {transform: translateY(0);}
+  75% {transform: translateY(-10px);}
+ }
+
+ .animate-bounce-up{ background:rgba(255, 255, 255, 0); width: 100px; height: 100px; margin:100px auto;-webkit-animation: bounce-up 1.4s linear infinite;animation: bounce-up 1.4s linear infinite;}
+
+
+</style>
+</head>
+
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top  opaqued" role="banner" style="font-family: 黑体;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">菜单</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <h1>被困在网络流水线上的"西西弗斯"</h1>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="index.html">首页</a></li>
+                <li class="active"><a href="page1.html">引入</a></li>
+                <li><a href="page2.html">职业背景</a></li>
+                <li ><a href="page3.html">职业概况</a></li>
+                <li><a href="page4.html">职业体验</a></li>
+                <li><a href="page5.html">尾声</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class=".my-img"><img src="images\img1.jpg" style="position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  z-index: 0;
+  zoom: 0;
+  background-color: #fff;
+  margin-top: 0cm;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  background-position-y:bottom;">
+<div class="wrap">
+
+  <div class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear">
+    <div class="art">
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="art">
+  <div class="qsh">
+<div class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear">
+ 
+<P >“轰隆——”</P>
+<P>又一声震耳欲聋后的死寂</P>
+<P>唤起了你一直在逃避的记忆——</P>
+  
+</div>
+</div>
+</div>
+
+<div class="animate-bounce-up"><div class="jt"><a href="#tzz"><img src="images/img1.png" class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear"/></a></div></div>
+
+<br id="tzz">
+<div class="xdt">
+<div class="zc">
+
+</div>
+
+
+
+<div class="juxing">
+<div class="vod">
+<video controls >
+    <source src="images\手机 改\手机 改.mp4" type="video/mp4"  >
+    您的浏览器不支持 video 标签。
+</video>
+
+<div class="yc">
+  <br>
+  <P>“患者的日常工作情况如何？”</P>
+  <P>“医生，</P>
+  <P>这里有一份患者的工作总结。”</P>
+  </div>
+</div>
+
+</div>
+<br>
+<br>
+
+
+<P class="hh"></P>
+<P>2022年2月4日凌晨</P>
+<P>北京冬奥会即将开幕</P>
+<P>Bilibili迎来年轻人的欢腾与追捧</P>
+<P>站内点赞量最多达到55.18万次</P>
+<P><font color="#449fab">在人潮沸腾的背后</font></P>
+<P><font color="#449fab">你还孤身挺在工作一线</font></P>
+<div class="tw">
+<div class="tpd"><img src="images/img4.png" /></div>
+</div>
+<br>
+<br>
+
+<P class="hh"></P>
+
+
+<P>曾听有人说过</P>
+<P>“你这个职业，好像已经把睡眠需求进化掉了啊”</P>
+<P>明明身体与神经早已习惯熬夜</P>
+<P>可在今天</P>
+<P>眼皮怎么格外的重呢......</P>
+<br>
+<br>
+<P class="hh"></P>
+<p>“医生，患者好像已经失去生命体征了！”</p>
+<p>“......对不起，我们也已经尽力了......”</p>
+<br>
+<br>
+<P class="hh"></P>
+<div class="tw">
+<div class="tpc"><img src="images/img5.png" /></div>
+</div>
+<P>“失落的灵魂......你到底是谁？”</P>
+<P>“我...”</P>
+<br>
+<br>
+
+<P class="hh"></P>
+<P>“我是......虚拟空间的清道夫...”</P>
+<P>“我是流水线上的螺丝钉......”</P>
+<P>“是现实生活版的西西弗斯...”</P>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<P class="hh"></P>
+<div class="jcbs">
+<P><b class="tc" style="color: #ff994c;">“我是互联网审核员。”</b></P>
+
+<br>
+<br>
+<br>
+<br>
+<P class="hh"></P>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="dlbox" style="font-family: 思源黑体;">
+
+<P style="text-align: left;text-indent: 2em;">
+2022年2月4日下午，B站图文审核组代组长“暮色木心”在武汉家中突发脑出血，在昏迷前紧急拨打120急救，后抢救无效死亡。
+</P>
+<br>
+
+
+<P style="text-align: left;text-indent: 2em;">
+尽管B站官方第一时间发布微博声明称，该员工“在事发前一周内未存在加班等情况”，但在这条消息下方，吐槽、质疑、惊讶、愤怒的评论挤满屏幕。互联网大厂的高压工作再次引发了全网的“职场恐惧”，同时，“互联网审核员”，互联网行业中庞大而边缘、不可或缺却无人在意的这一群体，以一种悲壮的形式站在了聚光灯下。
+</P>
+<br>
+
+<P style="text-align: left;text-indent: 2em;">
+然而，一人倒下，
+背后还有千千万万的审核员正在加班删除有关同事工作猝死的帖子，
+禁止一切为审核员发声声讨资本剥削审核员的行为。
+
+</P>
+<br>
+
+<P style="text-align: left;text-indent: 2em;">
+新的审核员又在重蹈西西弗斯的覆辙，成为了那群日复一日<span style="color:#449fab">推石上山</span>的人。
+</P>
+<br>
+<br>
+<br>
+
+</div>
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="link" style="background-image: url(images/搜索框.jpg);background-size: 85%;background-position: center;border-radius: 20px 20px 0px 0px; opacity: 0.85;"><a class="tc" href="page2.html"><p style="margin-top: 18px;color: #000; font-weight: 600;font-size:20px;font-family: 思源黑体;">一份互联网行业新兴职业的出现
+</p></a></div>
+
+</body>
+</html>

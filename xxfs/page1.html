@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>引入</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+<style type="text/css">
+*{ margin:0; padding:0}
+body{font-family:" 宋体"; color:#E6F4F4;background-image: linear-gradient(45deg, #111113, #656C68);}
+.wrap{ width:900px; margin:0 auto; }
+.art{ color:#E6F4F4;}
+.art p{ line-height:38px; font-size: 20px; text-align:center;font-family:"楷体";line-height:250%;}
+.tw p{line-height:px; font-size:18px; text-align:center}
+.jt{ text-align:center; padding-bottom: 10px;padding-top: -240px;}
+.jt img{ width:50px;}
+.tw{ position:relative}
+.tpa{ position:absolute; right:-320px; bottom:-10px;}
+.tpa img{ width:190px;}
+.tpd{ position:absolute; right:-300px; bottom:-10px;}
+.tpd img{ width:300px;}
+.tpb{ position:absolute; left:-200px;bottom:-240px;}
+.tpb img{ width:350px}
+.tpc{ position:absolute; left:-300px;bottom:-240px;}
+.tpc img{ width:300px}
+.zc{ float:left; width:200px; margin-left:-150px;margin-top:150px;}
+.zc img{ width:290%; margin-top:10px;}
+.yc{ float:right; margin-right:-50px;margin-top:220px;}
+.xdt{ margin-top:10px;}
+.xdt p{line-height:38px; font-size:18px;}
+.vod{  text-align:center; margin-top:100px;margin-bottom: 100px;}
+.vod video{ width: 280px;
+  height: 560px;
+  
+  /* 圆角矩形设置为高度的一半 */
+  border: 3px  #8bb4b4;
+  border-radius: 50px;}
+.dlbox{ padding:0px 10px;}
+.dlbox p{ line-height:30px; text-indent:2.0em;font-size:18px;}
+.link{ text-align: center; font-size:24px; background:#FFF; padding:30px 0px; margin:0px 0px 0px 0px;}
+.link a{ color:#F1350E; text-decoration:none;}
+.tc{ color:#F1B583; font-size:24px;}
+.hh{ height:30px;}
+.qsh p{ font-size:26px!important;font-family:"宋体"; line-height:65px!important}
+.qsha p{ font-size:30px!important;font-family:"宋体"; line-height:65px!important}
+.lyd p{padding-top: 100px;}
+.wzz{ color:#e7f5f5; padding:10px;}
+.wzz p{ line-height:40px; font-size:16px; text-indent:2.0em}
+
+
+@keyframes fade-in {
+
+0% {opacity: 0; margin-top:100px;}/*初始状态 透明度为0*/
+
+40% {opacity: 0.5;margin-top:38px;}/*过渡状态 透明度为0*/
+
+100% {opacity: 1; margin-top:0px;}/*结束状态 透明度为1*/
+
+}
+.qsh{ height:200px;overflow:hidden;padding-top: 250px;padding-bottom: 300px;}
+.qsha{ height:200px;overflow:hidden;padding-top: 500px;padding-bottom: 0px;}
+.dgxa{animation:fade-in;animation-duration: 1.5s;} 
+.lunbo{ margin:20px 10px; height:130px;}
+#tj{
+  padding-top: 20px;
+}
+.opaqued {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all .5s ease-in-out;
+  text-shadow: rgb(0 0 0 / 40%) 0 1px 1px;
+  border: none;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar {
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+header{
+  display: block;
+}
+.navbar-header h1{
+  font-size: 26px;
+  color: #449fab;
+  font-weight: 700;
+}
+.navbar-right li a{
+  font-size: 17px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+<!--元素跳动-->
+@-webkit-keyframes bounce-down {
+  25% {-webkit-transform: translateY(-10px);}
+  50%, 100% {-webkit-transform: translateY(0);}
+  75% {-webkit-transform: translateY(10px);}
+ }
+
+ @keyframes bounce-down {
+  25% {transform: translateY(-10px);}
+  50%, 100% {transform: translateY(0);}
+  75% {transform: translateY(10px);}
+ }
+
+ .animate-bounce-down{ background:#333; width: 100px; height: 100px; margin:100px auto;-webkit-animation: bounce-down 1.5s linear infinite;animation: bounce-down 1.5s linear infinite;
+ }
+
+ @-webkit-keyframes bounce-up {
+  25% {-webkit-transform: translateY(10px);}
+  50%, 100% {-webkit-transform: translateY(0);}
+  75% {-webkit-transform: translateY(-10px);}
+ }
+
+ @keyframes bounce-up {
+  25% {transform: translateY(10px);}
+  50%, 100% {transform: translateY(0);}
+  75% {transform: translateY(-10px);}
+ }
+
+ .animate-bounce-up{ background:rgba(255, 255, 255, 0); width: 100px; height: 100px; margin:100px auto;-webkit-animation: bounce-up 1.4s linear infinite;animation: bounce-up 1.4s linear infinite;}
+
+
+</style>
+</head>
+
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top  opaqued" role="banner" style="font-family: 黑体;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">菜单</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <h1>被困在网络流水线上的"西西弗斯"</h1>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="index.html">首页</a></li>
+                <li class="active"><a href="page1.html">引入</a></li>
+                <li><a href="page2.html">职业背景</a></li>
+                <li ><a href="page3.html">职业概况</a></li>
+                <li><a href="page4.html">职业体验</a></li>
+                <li><a href="page5.html">尾声</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class=".my-img"><img src="images\img1.jpg" style="position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  z-index: 0;
+  zoom: 0;
+  background-color: #fff;
+  margin-top: 0cm;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  background-position-y:bottom;">
+
+
+
+
+  <div class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear">
+    <div class="wrap">
+    <div class="art">
+      <div class="qsh">
+
+<P>“轰隆——”</P>
+<P>一声巨响震醒了在此沉寂的灵魂</P>
+<P>你努力地掀开沉重的眼皮</P>
+
+</div>
+
+<div class="animate-bounce-up"><div class="jt"><a href="#tz"><img src="images/img1.png" class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear"/></a></div></div>
+
+
+
+<div class="lyd">
+<p id="tz">映入眼帘的是一座陡峭的山坡，</p>
+
+</div>
+
+<p>还有一个正在遭受巨大痛苦的男人。</p>
+
+
+<br>
+<br>
+<P class="hh"></P>
+<p>以双手推动，</p>
+<P>以双足支撑，</P>
+<p>以肉身罹难，</p>
+<div class="tw">
+<div class="tpb"><img src="images/img3.png" /></div>
+</div>
+<P>汗水早已将这片熟悉的土地浇遍。</P>
+<P>一步，</P>
+<P>又一步，</P>
+<P>无限重复，</P>
+<P>双眼目睹着最后一步的攀登的完成，</P>
+<P>却又在下一秒目睹了巨石的陨落。</P>
+<P>一步，</P>
+<P>又一步，</P>
+
+<P>永无尽头、徒劳无功。</P>
+<P>面前，尘土升腾，</P>
+<P>心中，绝望四溢。</P>
+<br>
+<br>
+
+<P class="hh"></P>
+
+<P>“这是西西弗斯的罪与罚。”</P>
+<P>你听见自己的声音在耳畔嘶哑，</P>
+<P>你尝到自己的泪水在舌尖泛苦。</P>
+<br>
+<br>
+
+<P class="hh"></P>
+<P><font color="#449fab">可是，未知的灵魂——</P>
+<P><span>你为何品尝到这般感同身受的痛苦欲绝？</span></P>
+<br>
+<br>
+<br>
+<br>
+<div class="animate-bounce-up"><div class="jt"><a href="page1 a.html"><img src="images/img1.png" class="my-title carousel-content centered center gap fade-down no-display animated fadeInDown appear"/></a></div></div>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
